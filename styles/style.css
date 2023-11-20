@@ -2,4 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background: url("/images/cover-image-light.png") center no-repeat;
+  background-color: var(--background-color);
+  background-size: cover;
+  background-attachment: fixed;
 }
+

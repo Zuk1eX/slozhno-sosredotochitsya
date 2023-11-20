@@ -3,6 +3,25 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-dark {
+  --accent-color: #ff0070;
+  --background-image: url("/images/cover-image-dark.png");
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --text-shadow-color: #ff0070;
+  --accent-text-color: #ff0070;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #ff0070;
+    --background-image: url("/images/cover-image-dark.png");
+    --background-color: #000028;
+    --text-color: #f1b2ce;
+    --text-shadow-color: #ff0070;
+    --accent-text-color: #ff0070;
+  }
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
