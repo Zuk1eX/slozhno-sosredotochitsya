@@ -1,10 +1,197 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background: url("/images/cover-image-light.png") center no-repeat;
-  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px; /* 130% */
+  background: var(--background-color) var(--background-image) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 75px 10px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header__decor-element::before {
+  content: "rec";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-inline-end: 27px;
+  color: var(--accent-color);
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.header__decor-element::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+}
+
+.title {
+  color: var(--heading-text-color);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%; /* 95.7px */
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.header__title {
+  margin-block-start: 66px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.header__subtitle {
+  margin-block-start: 56px;
+  color: var(--background-color);
+  font-weight: 700;
+}
+
+.header__theme-menu {
+  align-self: flex-end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  border: 1px solid transparent;
+  padding: 3px 12.5px;
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+  background: none;
+  appearance: none;
+}
+
+.header__theme-menu-button_active {
+  border-color: var(--accent-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-inline: 10px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-block__title,
+.section-group__title {
+  color: var(--background-color);
+  font-size: inherit;
+}
+
+.text-block__title_type_subtitle {
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 1px var(--accent-color);
+}
+
+.section-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-group__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image {
+  width: 100%;
+}
+
+.section-gallery {
+  gap: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0px var(--accent-color);
+}

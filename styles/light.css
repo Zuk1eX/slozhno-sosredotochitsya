@@ -4,11 +4,11 @@
   переключая тему
 */
 :root.theme-light {
-  --accent-color: #ff8dcb;
   --background-image: url("/images/cover-image-light.png");
-  --background-color: #fff1f7;
+  --background-color: #FFF1F7;
+  --heading-text-color: #FFC2E6;
+  --accent-color: #FF8DCB;
   --text-color: #353430;
-  --text-shadow-color: #ff0070;
 }
 
 .page.theme_light {

@@ -3,9 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-color: #ff8dcb;
-  --background-image: url("/images/cover-image-light.png");
-  --background-color: #fff1f7;
-  --text-color: #353430;
-  --text-shadow-color: #ff0070;
+  --background-image: url("/images/cover-image-dark.png");
+  --background-color: #000028;
+  --heading-text-color: #db00ff;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
 }
