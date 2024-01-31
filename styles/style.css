@@ -119,15 +119,11 @@
   appearance: none;
 }
 
-.header__theme-menu-button:hover {
+.header__theme-menu-button:not(:disabled):hover {
   border-color: var(--hover-color);
 }
 
-.header__theme-menu-button:active {
-  border-color: var(--decorated-color);
-}
-
-.header__theme-menu-button:focus-visible {
+.header__theme-menu-button:focus {
   border-bottom-color: var(--decorated-color);
 }
 
