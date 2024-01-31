@@ -106,7 +106,6 @@
 }
 
 .header__theme-menu-button {
-  border: none;
   border: 1px solid transparent;
   padding: 2px 12.5px 4px;
   color: var(--decorated-color);
