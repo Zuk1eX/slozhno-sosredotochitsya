@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="header__decor-element" aria-hidden="true"></div>
+      <div class="header__decor-element" aria-hidden="true">rec</div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -65,6 +65,7 @@
               <a
                 class="link"
                 href="https://www.dana.org/article/multicosts-of-multitasking/"
+                target="_blank"
                 >выяснили</a
               >, что мозгу тяжело концентрироваться даже на двух делах
               одновременно. А когда в поле внимания попадает несколько важных
@@ -89,8 +90,10 @@
         </ul>
       </section>
       <section class="section section-what">
-        <h2 class="section__title">Что снижает концентрацию внимания?</h2>
-        <ul class="section__list">
+        <h2 class="section__title section-what__title">
+          Что снижает концентрацию внимания?
+        </h2>
+        <ul class="section__list section-what__list">
           <li class="text-block section__list-item">
             <h3 class="text-block__title title-decor">Многозадачность</h3>
             <p class="text-block__text">
@@ -214,32 +217,41 @@
         </div>
       </section>
       <div class="section section-gallery">
-        <h3 class="section-group__title title-decor">А можно в картинках?</h3>
-        <img
-          src="/images/sunset.png"
-          class="image section-gallery__image"
-          alt=""
-        />
-        <img
-          src="/images/ice-cream.png"
-          class="image section-gallery__image"
-          alt=""
-        />
-        <img
-          src="/images/tape.png"
-          class="image section-gallery__image"
-          alt=""
-        />
-        <img
-          src="/images/books.png"
-          class="image section-gallery__image"
-          alt=""
-        />
-        <img
-          src="/images/street.png"
-          class="image section-gallery__image"
-          alt=""
-        />
+        <h3 class="section-group__title title-decor section-gallery__title">
+          А можно в картинках?
+        </h3>
+        <div class="section-gallery__wrapper">
+          <img
+            src="/images/sunset.png"
+            class="image section-gallery__image"
+            alt=""
+            loading="lazy"
+          />
+          <img
+            src="/images/ice-cream.png"
+            class="image section-gallery__image"
+            alt=""
+            loading="lazy"
+          />
+          <img
+            src="/images/tape.png"
+            class="image section-gallery__image"
+            alt=""
+            loading="lazy"
+          />
+          <img
+            src="/images/books.png"
+            class="image section-gallery__image"
+            alt=""
+            loading="lazy"
+          />
+          <img
+            src="/images/street.png"
+            class="image section-gallery__image"
+            alt=""
+            loading="lazy"
+          />
+        </div>
       </div>
     </main>
     <footer class="footer decorated-zone">

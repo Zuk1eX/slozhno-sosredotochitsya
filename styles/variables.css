@@ -7,5 +7,18 @@
   --background-color: #000028;
   --heading-text-color: #db00ff;
   --accent-color: #ff0070;
+  --section-title-color: #ff0070;
+  --title-text-color: #000028;
   --text-color: #f1b2ce;
+  --decorated-color: #ff0070;
+  --decorated-rec-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+
+  --block-offset: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --block-offset: 20px;
+  }
 }
